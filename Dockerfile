@@ -6,7 +6,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     pip3 install torch torchvision torchaudio
 
-RUN pip3 install datasets transformers[ja,torch] spacy-alignments seqeval
+RUN pip3 install datasets transformers[ja,torch] spacy-alignments seqeval ipython pytorch-crf
 
 WORKDIR /work
 
